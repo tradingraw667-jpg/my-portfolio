@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #05050a;
+  --surface: #0d0d1a;
+  --border: #1a1a2e;
+  --accent-blue: #00d4ff;
+  --accent-purple: #7c3aed;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #05050a;
+  color: #f0f0f0;
+  font-family: var(--font-inter), Inter, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #05050a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a2e;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d4ff;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #00d4ff, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Neon glow utilities */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+.glow-blue:hover {
+  box-shadow: 0 0 40px rgba(0, 212, 255, 0.5);
+}
+
+/* Dot grid background */
+.dot-grid {
+  background-image: radial-gradient(circle, #1a1a2e 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Section padding */
+.section-pad {
+  padding: 80px 0;
+}
+
+/* RTL support */
+[dir="rtl"] body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+[dir="rtl"] .font-mono {
+  font-family: "Courier New", monospace;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 28s linear infinite; }
