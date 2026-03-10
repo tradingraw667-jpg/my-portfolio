@@ -89,6 +89,8 @@ export const translations = {
       messageLabel: "Message",
       messagePlaceholder: "Tell me about your project...",
       sendBtn: "Send Message",
+      sending: "Sending...",
+      errorMessage: "Something went wrong. Please try again.",
       orConnect: "or connect with me",
       footer: "© {year} DevPortfolio. Built with Next.js & Tailwind CSS."
     },
@@ -192,6 +194,8 @@ export const translations = {
       messageLabel: "Message",
       messagePlaceholder: "Parlez-moi de votre projet...",
       sendBtn: "Envoyer le Message",
+      sending: "Envoi en cours...",
+      errorMessage: "Une erreur s'est produite. Veuillez réessayer.",
       orConnect: "ou connectez-vous avec moi",
       footer: "© {year} DevPortfolio. Construit avec Next.js & Tailwind CSS."
     },
@@ -295,6 +299,8 @@ export const translations = {
       messageLabel: "الرسالة",
       messagePlaceholder: "أخبرني عن مشروعك...",
       sendBtn: "إرسال الرسالة",
+      sending: "جاري الإرسال...",
+      errorMessage: "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
       orConnect: "أو تواصل معي عبر",
       footer: "© {year} DevPortfolio. تم التطوير باستخدام Next.js و Tailwind CSS."
     },
